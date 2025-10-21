@@ -6,6 +6,7 @@ You can choose the password length and
 include numbers and special characters  
 (`@ # $ % & * ! ?`) to increase security
 and randomness.
+- Created to practice Spring Boot, unit testing, and integration testing.
 
 
 ![screenshot](screenshot/Password_Screenshot.jpg)
