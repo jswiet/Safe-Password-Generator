@@ -1,6 +1,8 @@
 ## 🔒️ Random Password Generator  
 
-- A simple web application for generating random passwords.  
+
+
+- [A simple web application for generating random passwords.](https://safe-password-generator-production.up.railway.app)  
 You can choose the password length and
 include numbers and special characters  
 (`@ # $ % & * ! ?`) to increase security
