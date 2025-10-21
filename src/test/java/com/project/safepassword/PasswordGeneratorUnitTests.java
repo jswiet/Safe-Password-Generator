@@ -67,16 +67,16 @@ class PasswordGeneratorUnitTests {
     void willFailWhenLengthIsBelowZeroOrZeroOrAbove50() {
 
         assertThatThrownBy(() -> UTPasswordGenerator.generatePassword(0, false, true)).isInstanceOf(IllegalArgumentException.class)
-                                                                                      .hasMessage("Length must be between 0 and 50");
+                                                                                      .hasMessage("Length must be between 5 and 50");
 
         assertThatThrownBy(() -> UTPasswordGenerator.generatePassword(-10, false, true)).isInstanceOf(IllegalArgumentException.class)
-                                                                                        .hasMessage("Length must be between 0 and 50");
+                                                                                        .hasMessage("Length must be between 5 and 50");
 
         assertThatThrownBy(() -> UTPasswordGenerator.generatePassword(51, false, true)).isInstanceOf(IllegalArgumentException.class)
-                                                                                       .hasMessage("Length must be between 0 and 50");
+                                                                                       .hasMessage("Length must be between 5 and 50");
 
         assertThatThrownBy(() -> UTPasswordGenerator.generatePassword(100, false, true)).isInstanceOf(IllegalArgumentException.class)
-                                                                                        .hasMessage("Length must be between 0 and 50");
+                                                                                        .hasMessage("Length must be between 5 and 50");
     }
 
 }

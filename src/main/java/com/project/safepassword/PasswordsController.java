@@ -25,8 +25,12 @@ public class PasswordsController {
                                        @RequestParam(required = false) boolean useSpecialChar,
                                        Model model) {
 
-        String mySafePassword = passwordGenerator.generatePassword(length, useNumbers, useSpecialChar);
-        model.addAttribute("showMyPassword", mySafePassword);
+        try {
+            String password = passwordGenerator.generatePassword(length, useNumbers, useSpecialChar);
+            model.addAttribute("showMyPassword", password);
+        } catch (IllegalArgumentException e) {
+            model.addAttribute("errorMessage", e.getMessage());
+        }
         return "index";
     }
 

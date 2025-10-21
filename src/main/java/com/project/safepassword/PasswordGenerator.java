@@ -11,14 +11,15 @@ public class PasswordGenerator {
 
     public String generatePassword(int length, boolean useNumbers, boolean useSpecialChar) {
 
-        if (length <= 0 || length > 50) {
-            throw new IllegalArgumentException("Length must be between 0 and 50");
+        if (length <= 4 || length > 50) {
+            throw new IllegalArgumentException("Length must be between 5 and 50!");
         }
 
         String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         String digits = "0123456789";
         String specialCharacters = "@#$%&*!?";
         String output = letters;
+
         if (useNumbers) {
             output += digits;
         }

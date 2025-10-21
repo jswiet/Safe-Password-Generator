@@ -8,9 +8,18 @@
           rel="stylesheet">
 </head>
 <body class="container">
+
 <div class="box">
+
+    <div th:if="${errorMessage}"
+         th:text="${errorMessage}"
+         style="color: red; font-weight: bold; margin-top: 10px;">
+    </div>
+
+    <br>
     <form action="/generate"
           method="post">
+
         <label>Password length:
             <input class="label"
                    id="length"
