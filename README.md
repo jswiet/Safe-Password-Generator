@@ -1,4 +1,4 @@
-## 🔒️ Random Password Generator 🔒️
+### 🔒️ Random Password Generator 🔒️###
 
 A simple web application for generating
 secure, random passwords.  
@@ -15,12 +15,11 @@ and randomness.
 
 ### 🚧 Tests
 
-- Implemented **unit tests** for the
+- Implemented unit tests for the
   password generation
   logic (`PasswordGeneratorUnitTests`)
   using AssertJ.
-- Implemented **integration tests
-  ** (`PasswordsControllerIntegrationTest`)
+- Implemented integration tests (`PasswordsControllerIntegrationTest`)
   using MockMvc.
 
 ---
