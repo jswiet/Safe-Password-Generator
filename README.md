@@ -29,12 +29,3 @@ and randomness.
     ```bash
     ./mvnw spring-boot:run
     ```
-
----
-
-### 🚧 Tests
-
-- Implemented **unit tests** for the password generation logic (`PasswordGeneratorUnitTests`) using AssertJ.
-- Implemented **integration tests** (`PasswordsControllerIntegrationTest`) using MockMvc.
-
----
