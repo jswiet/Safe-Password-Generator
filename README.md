@@ -1,13 +1,12 @@
-### 🔒️ Random Password Generator 🔒️
+## 🔒️ Random Password Generator  
 
-- A simple web application for generating
-secure, random passwords.  
+- A simple web application for generating random passwords.  
 You can choose the password length and
 include numbers and special characters  
 (`@ # $ % & * ! ?`) to increase security
 and randomness.
+- Built with Java 17, Spring Boot, and Thymeleaf.
 - Created to practice Spring Boot, unit testing, and integration testing.
-
 
 ![screenshot](screenshot/Password_Screenshot.jpg)
 
@@ -30,5 +29,12 @@ and randomness.
     ```bash
     ./mvnw spring-boot:run
     ```
+
+---
+
+### 🚧 Tests
+
+- Implemented **unit tests** for the password generation logic (`PasswordGeneratorUnitTests`) using AssertJ.
+- Implemented **integration tests** (`PasswordsControllerIntegrationTest`) using MockMvc.
 
 ---
