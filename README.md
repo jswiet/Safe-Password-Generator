@@ -1,6 +1,6 @@
 ## 🔒️ Random Password Generator  
 
-- [A simple application] (https://safepasswordgenerator.onrender.com) for generating random passwords.  
+- A simple application (https://safepasswordgenerator.onrender.com) for generating random passwords.  
 You can choose the password length and
 include numbers and special characters  
 (`@ # $ % & * ! ?`) to increase security
