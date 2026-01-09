@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safe password
+        generator</title>
+    <link href="/styles.css"
+          rel="stylesheet">
+</head>
+<body class="container">
+
+<div class="box">
+
+    <div th:if="${errorMessage}"
+         th:text="${errorMessage}"
+         style="color: red; font-weight: bold; margin-top: 10px;">
+    </div>
+
+    <br>
+    <form action="/generate"
+          method="post">
+
+        <label>Password length:
+            <input class="label"
+                   id="length"
+                   max="50" min="1"
+                   name="length"
+                   type="number"/>
+        </label>
+        <br><br>
+        <div>
+            <input checked
+                   id="useNumbers"
+                   name="useNumbers"
+                   type="checkbox"/>
+            <label for="useNumbers">Numbers</label>
+        </div>
+        <div>
+            <input checked
+                   id="useSpecialChar"
+                   name="useSpecialChar"
+                   type="checkbox"/>
+            <label for="useSpecialChar">Special
+                characters</label>
+        </div>
+        <br>
+        <button>
+            <p>Generate</p>
+            <svg class="h-6 w-6"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="4"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                </path>
+            </svg>
+        </button>
+        <br>
+    </form>
+
+    <label for="password">Your
+        password:</label><br>
+    <input class="label" id="password"
+           name="password"
+           th:value="${showMyPassword}"/>
+    <br>
+</div>
+</body>
+</html>
