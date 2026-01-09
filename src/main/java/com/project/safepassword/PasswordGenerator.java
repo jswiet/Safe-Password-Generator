@@ -11,7 +11,7 @@ public class PasswordGenerator {
 
     public String generatePassword(int length, boolean useNumbers, boolean useSpecialChar) {
 
-        if (length <= 4 || length > 50) {
+        if (length <= 5 || length > 50) {
             throw new IllegalArgumentException("Length must be between 5 and 50!");
         }
 
