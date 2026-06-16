@@ -10,7 +10,7 @@ and randomness.
 
 ---
 
-- Added CI/CD pipeline that uses GitHub Actions, Docker Hub, and Render:  
+### Added CI/CD pipeline that uses GitHub Actions, Docker Hub, and Render:  
   
 Push changes to GitHub  
 ⬇️  
@@ -20,9 +20,14 @@ Build and push Docker image to Docker Hub
 ⬇️  
 Automated deploy on Render  
 
-![screenshot](screenshot/Password_Screenshot.jpg)
-
+---
 ### Tests
 
 - Implemented unit tests using AssertJ.
 - Implemented integration tests using MockMvc.
+
+---
+
+![screenshot](screenshot/Password_Screenshot.jpg)
+
+
