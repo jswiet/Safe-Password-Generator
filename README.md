@@ -8,7 +8,9 @@ and randomness.
 - Built with Java 17, Spring Boot, and Thymeleaf.
 - Created to practice Spring Boot, unit testing, and integration testing.
 
---> Added CI/CD pipeline that uses GitHub Actions, Docker Hub, and Render:  
+---
+
+- Added CI/CD pipeline that uses GitHub Actions, Docker Hub, and Render:  
   
 Push changes to GitHub  
 ⬇️  
